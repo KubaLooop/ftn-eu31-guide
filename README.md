@@ -21,6 +21,9 @@ Odkazy s přednastaveným režimem: `…/#f2p` a `…/#eco`.
 ### Náhled živých hodin bez data
 Otevři stránku s `?sim=17` (start byl před 17 minutami) nebo `?sim=-30` (start za 30 minut).
 
+## Cache
+GitHub Pages drží CSS a JS v cache až 10 minut. Po změně v `assets/` zvyš v `index.html` číslo `?v=` u odkazů na CSS/JS (všude stejné), jinak lidi chvíli uvidí starou verzi.
+
 ## Lokálně
 Stačí otevřít `index.html` v prohlížeči. Nic se nebuilduje.
 
