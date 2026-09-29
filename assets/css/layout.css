@@ -34,10 +34,19 @@ body[data-mode="f2p"] [data-only="eco"]{display:none!important}
 body[data-mode="eco"] [data-only="f2p"]{display:none!important}
 
 /* sticky navigace */
-nav.jump{position:sticky;top:0;z-index:10;background:var(--bg);margin:16px -16px 0;padding:10px 16px;border-bottom:1px solid var(--line);display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+nav.jump{position:sticky;top:0;z-index:10;background:var(--bg);margin:16px -16px 0;padding:10px 16px;border-bottom:1px solid var(--line);display:flex;gap:6px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;-webkit-overflow-scrolling:touch;cursor:grab}
 nav.jump::-webkit-scrollbar{display:none}
+nav.jump.dragging{cursor:grabbing;user-select:none}
+nav.jump.dragging a{pointer-events:none}
+/* když se lišta nevejde, okraj se rozmaže, ať je vidět, že pokračuje */
+nav.jump.more-right{-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 48px),transparent)}
+nav.jump.more-left{-webkit-mask-image:linear-gradient(to left,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(to left,#000 calc(100% - 48px),transparent)}
+nav.jump.more-left.more-right{-webkit-mask-image:linear-gradient(to right,transparent,#000 48px,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(to right,transparent,#000 48px,#000 calc(100% - 48px),transparent)}
+/* na širších obrazovkách se lišta zalomí, takže je vidět celá */
+@media (min-width:760px){nav.jump{flex-wrap:wrap;overflow:visible;cursor:auto;-webkit-mask-image:none!important;mask-image:none!important}}
 nav.jump a{flex:none;font-size:13px;font-weight:600;text-decoration:none;padding:6px 11px;border-radius:7px;border:1px solid var(--line);background:var(--panel)}
 nav.jump a:hover,nav.jump a:focus-visible{border-color:var(--gold);outline:none}
+nav.jump a[aria-current="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
 nav.jump a.live{background:var(--core);border-color:var(--core);color:#fff;font-family:var(--mono);font-weight:500}
 nav.jump a.live::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#fff;margin-right:7px;vertical-align:1px;animation:pulse 1.6s infinite}
 @media (prefers-reduced-motion:reduce){nav.jump a.live::before{animation:none}}
