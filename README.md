@@ -8,7 +8,7 @@ Odkazy s přednastaveným režimem: `…/#f2p` a `…/#eco`.
 
 | Co | Soubor |
 |---|---|
-| Datum a čas startu (živé hodiny v plánu dne 1) | `assets/js/config.js` → `startAt` |
+| Datum a čas startu (živé hodiny v harmonogramu) | `assets/js/config.js` → `startAt` |
 | Texty, checklisty, časy v timeline | `index.html` |
 | Barvy / světlý a tmavý režim | `assets/css/tokens.css` |
 | Vzhled komponent | `assets/css/components.css` |

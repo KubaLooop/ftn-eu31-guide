@@ -49,7 +49,7 @@
     if (!show) return;
     nowEl.textContent = nowText;
     nextEl.textContent = nextText;
-    nav.textContent = navText || 'plán dne 1';
+    nav.textContent = navText || 'harmonogram';
   }
 
   document.addEventListener('ftn:mode', tick);
