@@ -169,3 +169,11 @@ dialog.lb button{font:inherit;font-weight:700;background:#fff;color:#111;border:
 .legend .sw-core{background:var(--core-soft);border-color:var(--core)}
 .t-bonus{background:transparent;color:var(--muted);border:1px dashed var(--muted)}
 ul.check li.bonus label{color:var(--muted)}
+.t-goal{background:var(--ok-soft);color:var(--ok);border:1px solid var(--ok)}
+.goals tr.goal td{background:var(--ok-soft)}
+.goals tr.goal td:first-child::after{content:"cíl";display:block;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--ok)}
+.goals tr.must td{background:var(--core-soft)}
+.goals tr.must td:first-child::after{color:var(--core)}
+.why .fair{margin-top:12px;background:var(--info-soft);border-radius:10px;padding:10px 14px}
+.why .fair b{display:block;font-size:14px}
+.why .fair p{margin:4px 0 0}
