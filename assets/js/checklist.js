@@ -6,11 +6,14 @@
 
   function visible(el) { return el.offsetParent !== null; }
   function row(b) { return b.closest('li'); }
+  // bonusové body jdou odškrtnout, ale nepočítají se do progressu ani do „pokračovat“
+  function isBonus(b) { return !!b.closest('li.bonus'); }
 
   function update() {
     boxes.forEach(function (b) { var r = row(b); if (r) r.classList.toggle('done', b.checked); });
     document.querySelectorAll('[data-sec]').forEach(function (s) {
       var own = [].filter.call(s.querySelectorAll('input[type=checkbox]'), function (b) {
+        if (isBonus(b)) return false;
         return visible(b) || (b.checked && document.body.classList.contains('hide-done') && !isOtherMode(b));
       });
       var done = own.filter(function (b) { return b.checked; }).length;
@@ -42,7 +45,7 @@
   // pokračovat: první neodškrtnutý bod, který se tě týká
   var cont = document.getElementById('continueBtn');
   cont.addEventListener('click', function () {
-    var next = boxes.filter(function (b) { return !b.checked && visible(b); })[0];
+    var next = boxes.filter(function (b) { return !b.checked && visible(b) && !isBonus(b); })[0];
     if (!next) { cont.textContent = 'Všechno hotovo 🎉'; return; }
     var target = next.closest('.tl-card') || row(next);
     target.scrollIntoView({ block: 'center' });

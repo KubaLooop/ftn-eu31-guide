@@ -161,3 +161,11 @@ dialog.lb button{font:inherit;font-weight:700;background:#fff;color:#111;border:
 
 /* dole */
 .reset{margin-top:28px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+
+/* legenda a bonusové body */
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;margin-top:12px;font-size:13px;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:9px 14px}
+.legend b{color:var(--ink);flex-basis:100%}
+.legend .sw{display:inline-block;width:14px;height:14px;border-radius:4px;border:1px solid var(--line);background:var(--panel);margin-right:6px;vertical-align:-2px}
+.legend .sw-core{background:var(--core-soft);border-color:var(--core)}
+.t-bonus{background:transparent;color:var(--muted);border:1px dashed var(--muted)}
+ul.check li.bonus label{color:var(--muted)}

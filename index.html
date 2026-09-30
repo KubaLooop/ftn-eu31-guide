@@ -16,16 +16,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700;800&family=Figtree:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
-<link rel="stylesheet" href="assets/css/tokens.css?v=4">
-<link rel="stylesheet" href="assets/css/layout.css?v=4">
-<link rel="stylesheet" href="assets/css/components.css?v=4">
-<script src="assets/js/config.js?v=4" defer></script>
-<script src="assets/js/store.js?v=4" defer></script>
-<script src="assets/js/mode.js?v=4" defer></script>
-<script src="assets/js/checklist.js?v=4" defer></script>
-<script src="assets/js/timeline.js?v=4" defer></script>
-<script src="assets/js/lightbox.js?v=4" defer></script>
-<script src="assets/js/nav.js?v=4" defer></script>
+<link rel="stylesheet" href="assets/css/tokens.css?v=5">
+<link rel="stylesheet" href="assets/css/layout.css?v=5">
+<link rel="stylesheet" href="assets/css/components.css?v=5">
+<script src="assets/js/config.js?v=5" defer></script>
+<script src="assets/js/store.js?v=5" defer></script>
+<script src="assets/js/mode.js?v=5" defer></script>
+<script src="assets/js/checklist.js?v=5" defer></script>
+<script src="assets/js/timeline.js?v=5" defer></script>
+<script src="assets/js/lightbox.js?v=5" defer></script>
+<script src="assets/js/nav.js?v=5" defer></script>
 </head>
 <body data-mode="f2p">
 <div class="wrap">
@@ -39,6 +39,12 @@
   <div class="eyebrow">Shakes &amp; Fidget · EU31 · start pá 2. 10. v 16:00</div>
   <h1>Start serveru bez chyb: první 3 dny</h1>
   <p class="lede">Společný plán pro celý cech. Nahoře je <b>harmonogram startu</b> (časy prvního dne), pod ním checklisty na celé tři dny. Přepni si, jestli hraješ zdarma, nebo kupuješ pár packů. Odškrtnuté body si pamatuje tvůj prohlížeč, takže se sem můžeš kdykoliv vrátit.</p>
+  <div class="legend" role="note">
+    <b>Nemusíš odškrtnout všechno.</b>
+    <span><i class="sw sw-core"></i>červené = povinné pro cech</span>
+    <span><i class="sw"></i>bílé = doporučené</span>
+    <span><span class="tag t-bonus">bonus</span>navíc, když máš čas nebo houby (nepočítá se do progressu)</span>
+  </div>
 
   <div class="controls">
     <div class="seg" role="group" aria-label="Styl hraní">
@@ -62,7 +68,7 @@
 <section id="plan" data-sec>
   <div class="sechead">
     <h2>Harmonogram startu</h2><span class="prog"></span>
-    <span class="sub">Tři časy a jedno číslo. Když stihneš tohle, jsi v pohodě.</span>
+    <span class="sub">Tři časy a dva cíle na konec dne. Když stihneš tohle, jsi v pohodě.</span>
   </div>
   <div class="bar"><i></i></div>
 
@@ -76,6 +82,7 @@
     <div class="mile"><div class="when">16:20</div><div class="what">Bonusy <span data-only="eco">6/4</span><span data-only="f2p">3/3</span></div><div class="who">ECO 6/4 · F2P 3/3</div></div>
     <div class="mile"><div class="when">16:45</div><div class="what">Celý cech 6/4</div><div class="who">Instruktor 6 / Poklad 4</div></div>
     <div class="mile goal"><div class="when">25 %</div><div class="what">Album do konce dne</div><div class="who">F2P to s reklamami zvládne</div></div>
+    <div class="mile goal"><div class="when">lvl 25</div><div class="what">Pevnost ještě dnes</div><div class="who">i F2P · ECO + HoK skip</div></div>
   </div>
 
   <ol class="tl">
@@ -84,6 +91,7 @@
       <div class="tl-body"><div class="tl-card">
         <label><input type="checkbox" id="tl1" data-check><span class="tl-title"><span class="tag t-all">všichni</span>Houbičkář: free balíček + všechny kódy</span></label>
         <p>U Houbičkáře si claimni free balíček a hned zadej <b>všechny kódy</b> z Discord roomky s kódy (průběžně je tam doplňujeme). Kódy dávají houby a mounta, typicky grifina.</p>
+        <p>Zadej i <b>creator code</b> (najdeš ho v roomce s kódy). Okřídlený elixír, který z něj dostaneš, <b>vypij</b>: prodat za zlato nejde.</p>
       </div></div>
     </li>
 
@@ -103,9 +111,10 @@
         <ul>
           <li>8 arena fightů (lvl 2) a Training Dungeon (lvl 3). Čekání mezi fighty přeskoč, ať jsi rychle hotový.</li>
           <li>Po vyčištění dungeonu hned zavři hru. Často se zbuguje a vrátí na prvního nepřítele, takže jde dojet až lvl 4.</li>
-          <li>Starter Pack potion prodej za 100 zlata. Bonusy <b>Instruktor 6 / Poklad 4 do 16:20</b>.</li>
+          <li>Okřídlený elixír ze Starter Packu (a z Twitch dropů) prodej za 100 zlata. Bonusy <b>Poklad 4 / Instruktor 6 do 16:20</b>.</li>
+          <li>Zbylé zlato rozklikej do statů.</li>
         </ul>
-        <p class="warn">Expedice zatím ne. Do 16:45 doklikej arénu a počkej na cech.</p>
+        <p class="warn">Expedice zatím ne. Do 16:45 doklikej arénu a počkej, až bude mít bonusy celý cech.</p>
       </div></div>
     </li>
 
@@ -116,7 +125,7 @@
         <label><input type="checkbox" id="tl3f" data-check><span class="tl-title"><span class="tag t-f2p">F2P</span>Training Dungeon, prodej okřídleňáka, bonusy 3/3</span></label>
         <ul>
           <li>Training Dungeon ano (zdarma XP, po vyčištění zavři hru).</li>
-          <li>Prodej okřídleňáka → 100 zlata → <b>Instruktor 3 / Poklad 3 do 16:20</b>.</li>
+          <li>Prodej okřídleňáka (okřídlený elixír z Twitch dropů) → 100 zlata → <b>Instruktor 3 / Poklad 3 do 16:20</b>. Ten z creator code prodat nejde.</li>
         </ul>
         <p class="warn">Na 8 aren na lvl 1 nečekej! Bez hub je to hodina a půl čekání. Arénu dojedeš průběžně později.</p>
       </div></div>
@@ -135,7 +144,8 @@
       <div class="tl-time">16:45<small>deadline</small></div>
       <div class="tl-body"><div class="tl-card">
         <label><input type="checkbox" id="tl5" data-check><span class="tl-title"><span class="tag t-all">všichni</span>Celý cech má 6/4, jedeme expedice</span></label>
-        <p><span data-only="eco">ECO: teď rozjeď expedice na <b>lvl 10</b>, odemkni album a začni ho plnit.</span><span data-only="f2p">F2P: pokračuj expedicemi, od <b>lvl 10</b> plň album.</span> Den 1 jen krátké expedice. Když se nepovedou 2–3 hvězdy, ztratíš míň.</p>
+        <p>Cechovní bonus se počítá ze součtu levelů všech členů ÷ 5. Když má 50 lidí Poklad 4 / Instruktor 6, cech má <b>+40 % zlata / +60 % XP</b>. Proto na sebe čekáme.</p>
+        <p><span data-only="eco">ECO: teď rozjeď expedice (nejdřív za 2,5 a za 5 thirstu) a jeď na <b>lvl 10</b>.</span><span data-only="f2p">F2P: pokračuj expedicemi na <b>lvl 10</b>.</span> V tavérně zkontroluj, že máš zapnuté <b>expedice</b>, ne klasické questy. Další postup je v sekci <a href="#d1">Den 1</a>.</p>
       </div></div>
     </li>
 
@@ -160,7 +170,15 @@
       <div class="tl-body"><div class="tl-card">
         <label><input type="checkbox" id="tl8" data-check><span class="tl-title"><span class="tag t-core">milník</span>Album (Scrapbook) aspoň 25 %</span></label>
         <p>Hall of Fame farm na nálepky, stačí reklamy nebo průběžné klikání, houby na to nepotřebuješ.</p>
-        <p data-only="eco"><b>ECO ideál:</b> lvl 25 → odemknout pevnost → Fortress Pack → skip až na Hall of Knights 6.</p>
+      </div></div>
+    </li>
+
+    <li class="tl-item" data-name="Konec dne: lvl 25 a pevnost">
+      <div class="tl-time">konec<small>dne</small></div>
+      <div class="tl-body"><div class="tl-card">
+        <label><input type="checkbox" id="tl9" data-check><span class="tl-title"><span class="tag t-core">cíl cechu</span>Lvl 25 a odemčená pevnost</span></label>
+        <p data-only="f2p">I bez skipů se snaž za každou cenu dát lvl 25 ještě dnes. Čím dřív pevnost stojí, tím dřív běží stavby a 48h timer na suroviny.</p>
+        <p data-only="eco">Fortress Pack a skip <b>Hall of Knights aspoň na 4–5</b> (ideál 6). HoK každého člena posiluje celý cech v guild fightech. Kdo houby takhle utratit nechce, musí tu ztrátu dohnat grindem stejně jako F2P.</p>
       </div></div>
     </li>
   </ol>
@@ -169,6 +187,7 @@
     <h3>Proč máme deadliny</h3>
     <p>Aby měl cech šanci mezi ostatními a byl trochu competitive, ne aby vás někdo buzeroval. Časy platí hlavně první den a hlavně pro F2P, protože tam rozhodují minuty. Kdo je první den bez ozvání nestihne, uvolní místo dalším.</p>
     <p>Víme, že 25 % alba je hodně. Je to ale hranice, kterou F2P hráč první den s reklamami v klidu zvládne. Když ti do toho něco vleze, napiš dopředu do <b>🤝general</b>, jsme vstřícní ke každému, kdo hrát chce. Tamtéž patří i dotazy a připomínky, na všechno odepíšeme.</p>
+    <p>Kromě časů chceme ještě jednu věc: <b>lvl 25 a pevnost první den u všech</b>. F2P to dají grindem, ECO k tomu přidají Fortress Pack a skip Hall of Knights aspoň na 4–5. Hall of Knights každého člena se sčítá do síly celého cechu.</p>
     <p class="hype">Jdeme urvat top místo pičo!</p>
   </div>
 </section>
@@ -197,13 +216,13 @@
       <li class="core"><label><input type="checkbox" id="pg1"><span><span class="tag t-core">všichni</span>Založ / předregistruj účet co nejdřív. Dostaneš víc hub a můžeš sbírat Twitch dropy.</span></label></li>
       <li class="core"><label><input type="checkbox" id="pg4"><span><span class="tag t-core">všichni</span>Přezdívku na našem Discord serveru měj <b>přesně jako jméno postavy ve hře</b> (stejná písmena, velikost i diakritika). Podle ní ti v 16:00 posíláme pozvánku.</span></label></li>
       <li class="core"><label><input type="checkbox" id="pg9"><span><span class="tag t-core">všichni</span>Pošli <b>screenshot své postavy</b> do roomky <b>🤠postavy</b>.</span></label></li>
-      <li><label><input type="checkbox" id="pg10"><span><span class="tag t-guild">cech</span>Domluv si fortress buddyho (synchronizace 48h timeru a duplikace útoků).</span></label></li>
       <li class="core"><label><input type="checkbox" id="pg6"><span><span class="tag t-core">všichni</span>Najdi na Discordu <b>roomku s kódy</b> a měj ji v 16:00 otevřenou. Kódy chodí i z oficiálních kanálů a streamů kolem startu.</span></label></li>
       <li><label><input type="checkbox" id="pg2"><span>Propoj Twitch a sbírej dropy už pár týdnů předem. Kampaně se dají stackovat bez claimu.</span></label></li>
       <li class="core"><label><input type="checkbox" id="pg3"><span><span class="tag t-core">všichni</span><b>Dropy neclaimuj všechny hned.</b> Ber jen ty, které brzy expirují (7 dní po konci cyklu). Suroviny se generují v momentě claimu na Twitchi, takže dřevo a kámen claimni až s rozjetou pevností. Potiony drž do lvl 32.</span></label></li>
       <li><label><input type="checkbox" id="pg5"><span>Připrav si SFTools (simulace dungeonů a petů) a SF na telefonu. Přihlášení na druhém zařízení = achievement Second Screen.</span></label></li>
       <li><label><input type="checkbox" id="pg7"><span>Vyber si třídu. Rozdíly nejsou velké a pro F2P hrají ještě menší roli. Warrior a Battle Mage jsou v dungeonech pomalejší.</span></label></li>
       <li data-only="eco"><label><input type="checkbox" id="pg8"><span><span class="tag t-eco">eco</span><b>Předkup Starter Pack</b> ještě před startem, ať tě v launch minutách nezdrží platba.</span></label></li>
+      <li class="bonus"><label><input type="checkbox" id="pg10"><span><span class="tag t-bonus">bonus</span>Fortress buddy (synchronizace 48h timeru a duplikace útoků). Silně P2W strategie, skoro nikdo ji jet nemusí.</span></label></li>
     </ul>
     <details class="info">
       <summary>Infografika: PvE tierlist tříd</summary>
@@ -224,44 +243,55 @@
   <div class="panel">
     <div class="note">Hlavní limit dne 1 a 2 je thirst (max 300 s pivy). Dungeony a Hall of Fame jsou zdarma, thirst používej na přemostění, když se zasekneš.</div>
 
-    <div class="phase">Lvl 4–10</div>
+    <div class="phase">Start · lvl 1–10</div>
     <ul class="check">
-      <li><label><input type="checkbox" id="d1a"><span>Krátké expedice až do lvl 10, kde se sám odemkne Scrapbook.</span></label></li>
-      <li class="core"><label><input type="checkbox" id="d1b"><span><span class="tag t-core">všichni</span>Přihlas se souběžně na telefonu nebo v SFTools → achievement <b>Second Screen</b> (+5 všechny staty).</span></label></li>
-      <li><label><input type="checkbox" id="d1c"><span>Gear z Weapon a Magic shopu za zlato, případně malé potiony. Talisman slot ignoruj do lvl 15.</span></label></li>
-      <li class="core"><label><input type="checkbox" id="d1d"><span><span class="tag t-core">všichni</span>Hall of Fame farm na nálepky: album <b>aspoň 25 % do konce dne</b> (nakupující klidně 30 %+).</span></label></li>
+      <li><label><input type="checkbox" id="d1a"><span>První expedice za 2,5 a za 5 thirstu, pak dál do lvl 10, kde se sám odemkne Scrapbook (album).</span></label></li>
+      <li><label><input type="checkbox" id="d1c"><span>Nové itemy a malé potiony z Weapon a Magic shopu za zlato. Talisman slot zatím ignoruj.</span></label></li>
+      <li><label><input type="checkbox" id="d1w"><span>Poraz 6 protivníků v Training Dungeonu, pokud ještě nejsi hotový.</span></label></li>
       <li data-only="f2p"><label><input type="checkbox" id="d1v"><span><span class="tag t-f2p">f2p</span>Arena fighty dojížděj průběžně, jak naběhne free fight. Na lvl 1 na ně nečekej.</span></label></li>
     </ul>
 
-    <div class="phase">Lvl 10–13</div>
+    <div class="phase">Lvl 10–16</div>
     <ul class="check">
+      <li class="core"><label><input type="checkbox" id="d1b"><span><span class="tag t-core">všichni</span>Přihlas se souběžně na telefonu nebo v SFTools → achievement <b>Second Screen</b> (+5 všechny staty).</span></label></li>
+      <li class="core"><label><input type="checkbox" id="d1g"><span><span class="tag t-core">všichni</span>Achievement s kelímky <b>Rip-off Rip-off</b>: 3 výhry v řadě ve skořápkách, příkaz <code>/gold bet 1</code> (sázíš nejmíň zlata).</span></label></li>
+      <li class="core"><label><input type="checkbox" id="d1d"><span><span class="tag t-core">všichni</span>Hall of Fame farm na nálepky: album aspoň <b>18 %</b> (do konce dne 25 %).</span></label></li>
+      <li><label><input type="checkbox" id="d1y"><span><b>Dlouhé expedice až do lvl 16.</b> Na lvl 10 dávají víc XP než na lvl 16, tak toho využij.</span></label></li>
       <li><label><input type="checkbox" id="d1e"><span>Útoč na hráče, co dávají max zlata v tvém rozsahu 100 ranků. Po eventu Rumble for Riches je to slabší, ale pořád to jde.</span></label></li>
-      <li><label><input type="checkbox" id="d1f"><span>Vyčisti Tutorial Dungeon a Light World dungeon 1 → lvl 11–13.</span></label></li>
-      <li class="core"><label><input type="checkbox" id="d1g"><span><span class="tag t-core">všichni</span>Achievement <b>Rip-off Rip-off</b>: 3 výhry v řadě ve skořápkách, příkaz <code>/gold bet 1</code> (sázíš nejmíň zlata).</span></label></li>
     </ul>
 
-    <div class="phase">Lvl 13–25</div>
+    <div class="phase">Lvl 16–20</div>
     <ul class="check">
-      <li><label><input type="checkbox" id="d1h"><span>Když už nejde žádný dungeon a album je 25 %+, dojeď thirstem expedice na lvl 15.</span></label></li>
-      <li><label><input type="checkbox" id="d1i"><span>Lvl 15: talismany a medium potiony. Přeequip, <b>priorita zbraň</b>, po každém nákupu zkontroluj šance v SFTools.</span></label></li>
-      <li><label><input type="checkbox" id="d1j"><span>Lvl 20: Mines of Gloria. Kolem lvl 20 cíl album 35 %.</span></label></li>
-      <li><label><input type="checkbox" id="d1k"><span>Když dungeony nedotáhnou na lvl 25, zbytek dojeď thirstem.</span></label></li>
+      <li><label><input type="checkbox" id="d1i"><span>Nové itemy, talismany a <b>medium potiony</b> (teď je čas vybrat drops, pokud sis je šetřil). Přeequip, <b>priorita zbraň</b>, šance ověř v SFTools.</span></label></li>
+      <li><label><input type="checkbox" id="d1f"><span>Dojeď celý Training Dungeon a podzemí <b>1/1 až 1/6</b>.</span></label></li>
+      <li class="core"><label><input type="checkbox" id="d1z"><span><span class="tag t-core">všichni</span>Album aspoň <b>24 %</b>.</span></label></li>
+      <li><label><input type="checkbox" id="d1h"><span>Od lvl 16 už jen <b>krátké expedice</b>, až do lvl 20.</span></label></li>
     </ul>
+
+    <div class="phase">Lvl 20–25</div>
+    <ul class="check">
+      <li><label><input type="checkbox" id="d1j"><span>Klíč z expedice → podzemí <b>2/1, 2/2</b> (Mines of Gloria). Krátké expedice do lvl 22.</span></label></li>
+      <li><label><input type="checkbox" id="d1u"><span>Nové itemy, pak podzemí <b>1/7 a 2/3</b>.</span></label></li>
+      <li class="core"><label><input type="checkbox" id="d1q"><span><span class="tag t-core">všichni</span>Album aspoň <b>27 %</b>.</span></label></li>
+      <li class="core"><label><input type="checkbox" id="d1k"><span><span class="tag t-core">všichni</span>Krátké expedice do <b>lvl 25</b>. Zlato už neutrácej, šetři na Poklad 6 a pevnost. Když expedice nestačí, zbytek dojeď thirstem.</span></label></li>
+    </ul>
+    <p class="small" style="margin:6px 0 0">Podzemí 1/3 = 1. podzemí (Desecrated Catacombs), 3. patro. Podzemí 2 jsou Mines of Gloria.</p>
 
     <div class="phase">Lvl 25 · pevnost</div>
     <ul class="check">
-      <li class="core"><label><input type="checkbox" id="d1l"><span><span class="tag t-core">všichni</span>Odemkni pevnost. <b>Gem Mine nech na lvl 1 a Wall na lvl 0.</b> Stav v pořadí ze sekce <a href="#fort">Pevnost</a>.</span></label></li>
-      <li data-only="eco"><label><input type="checkbox" id="d1m"><span><span class="tag t-eco">eco</span>Kup <b>Fortress Pack</b> a skipuj podle skip orderu až na Hall of Knights 6 (celý order: 363 hub, 577 zlata).</span></label></li>
+      <li class="core"><label><input type="checkbox" id="d1l"><span><span class="tag t-core">všichni</span>Postav pevnost podle pořadí ze sekce <a href="#fort">Pevnost</a> (a roomky 🏰︱Pevnost stavění). <b>Gem Mine nech na lvl 1 a Wall na lvl 0.</b></span></label></li>
+      <li data-only="eco" class="core"><label><input type="checkbox" id="d1m"><span><span class="tag t-core">eco</span>Kup <b>Fortress Pack</b> a skipuj podle skip orderu, <b>Hall of Knights aspoň na 4–5</b> (ideál 6). Kdo neskipne, dohání to grindem.</span></label></li>
       <li data-only="f2p"><label><input type="checkbox" id="d1n"><span><span class="tag t-f2p">f2p</span>Stav ve stejném pořadí, jen bez skipování. Laborer's Quarter zkracuje všechny stavby, proto jde hned za Fortress.</span></label></li>
       <li class="core"><label><input type="checkbox" id="d1o"><span><span class="tag t-core">všichni</span>Zapiš si čas odemčení pevnosti. Po 48 h bereš suroviny z útoků (když soupeř taky prošel 48 h).</span></label></li>
-      <li><label><input type="checkbox" id="d1p"><span>Zlato do cechovních skillů, dofarmi album.</span></label></li>
+      <li><label><input type="checkbox" id="d1p"><span><b>Poklad na 6</b> (750 zlata), free album, free podzemí, doklikej expedice.</span></label></li>
+      <li><label><input type="checkbox" id="d1x"><span>Podzemí <b>1/8, 2/4 a 2/5</b>.</span></label></li>
     </ul>
 
     <div class="phase">Večer dne 1</div>
     <ul class="check">
-      <li><label><input type="checkbox" id="d1r"><span>Gear s gem sloty: zhruba 5 gemů hlavního atributu + 4 Constitution (nebo až 8 hlavních). Na koho co sedí, ověř v SFTools.</span></label></li>
-      <li data-only="eco"><label><input type="checkbox" id="d1s"><span><span class="tag t-eco">eco</span>Push dál: dungeony do lvl 30, klíč Ruins of Gnark z expedic, zaseklý před 40 → thirst a klíč Cutthroat Grotto.</span></label></li>
-      <li><label><input type="checkbox" id="d1t"><span>Dojeď arena fighty, všechno zlato utrať, zkontroluj timery v pevnosti.</span></label></li>
+      <li><label><input type="checkbox" id="d1r"><span>Pár itemů se slotem na drahokam a vlož do nich gemy: zhruba 5 hlavního atributu + 4 Constitution (nebo až 8 hlavních). Na koho co sedí, ověř v SFTools.</span></label></li>
+      <li data-only="eco" class="bonus"><label><input type="checkbox" id="d1s"><span><span class="tag t-bonus">bonus</span>Push dál: dungeony do lvl 30, klíč Ruins of Gnark z expedic, zaseklý před 40 → thirst a klíč Cutthroat Grotto.</span></label></li>
+      <li><label><input type="checkbox" id="d1t"><span>Doklikej arénu, všechno zlato utrať, zkontroluj timery v pevnosti.</span></label></li>
     </ul>
     <p class="small" style="margin:10px 0 0">Hall of Knights (22:30) a zlato do bonusů před spaním najdeš v <a href="#plan">harmonogramu</a>.</p>
   </div>
@@ -278,6 +308,7 @@
     <div class="phase">Každý den ráno</div>
     <ul class="check">
       <li class="core"><label><input type="checkbox" id="d2a"><span><span class="tag t-core">všichni</span>Grifin běží? Nové kódy uplatněné? Thirst na piva (houby) místo nákupů.</span></label></li>
+      <li><label><input type="checkbox" id="d2i"><span>Nasbírej další gemy z Gem Mine a dojeď podzemí <b>1/9 a 2/6</b>.</span></label></li>
       <li><label><input type="checkbox" id="d2b"><span>Expedice podle tierlistu (sekce <a href="#tips">Tipy</a>), sběr v pevnosti, podepsat cechovní fighty a raidy.</span></label></li>
     </ul>
 
@@ -298,7 +329,7 @@
       <li><label><input type="checkbox" id="d3c"><span>Lvl 99: Demon Portal (útoč na konci dne). Lvl 100: Toilet klíč, házej zbytečné epiky pro auru.</span></label></li>
       <li><label><input type="checkbox" id="d3d"><span>Lvl 105: <b>Arena Manager</b>. První atrakce speed + gold boosty, pak 7denní skipy na runy pro %HP gearu.</span></label></li>
       <li><label><input type="checkbox" id="d3e"><span>Zaseklý na Killing Machine (Frost Blood Temple): Gem Mine na lvl 5 pro silnější gemy. Pomáhá hlavně Warriorovi a Battle Mage.</span></label></li>
-      <li><label><input type="checkbox" id="d3f"><span><span class="tag t-guild">cech</span>Fortress buddy duplikace: nech si v inboxu jeho útok, otevři a zavři counterattack, v pevnosti klikni attack a zavři, 2 h nic neútoč, pak nejdřív útok v pevnosti a potom counterattack z mailu.</span></label></li>
+      <li class="bonus"><label><input type="checkbox" id="d3f"><span><span class="tag t-bonus">bonus · p2w</span>Fortress buddy duplikace: nech si v inboxu jeho útok, otevři a zavři counterattack, v pevnosti klikni attack a zavři, 2 h nic neútoč, pak nejdřív útok v pevnosti a potom counterattack z mailu.</span></label></li>
       <li data-only="eco"><label><input type="checkbox" id="d3g"><span><span class="tag t-eco">eco</span>Lvl 125 + Heart of the Underworld z Gem Mine 10 → Underworld → <b>Pro Pack</b> a Underworld skip order.</span></label></li>
     </ul>
     <details class="info">
@@ -316,14 +347,14 @@
 <section id="cile">
   <div class="sechead">
     <h2>Jak vypadá dobrý start</h2>
-    <span class="sub">Povinný je jen zelený řádek a časy z harmonogramu. Zbytek je orientační obrázek, kde bys měl zhruba být. Tvůj sloupec je zvýrazněný.</span>
+    <span class="sub">Povinné jsou zelené řádky a časy z harmonogramu. Zbytek je orientační obrázek, kde bys měl zhruba být. Tvůj sloupec je zvýrazněný.</span>
   </div>
   <div class="tbl panel"><table class="goals">
     <thead><tr><th>Konec dne</th><th class="c-f2p">F2P</th><th class="c-eco">ECO (pár packů)</th></tr></thead>
     <tbody>
-      <tr class="must"><td>Den 1 · album</td><td colspan="2">aspoň <b>25 %</b> pro všechny (ECO klidně 30–35 %)</td></tr>
+      <tr class="must"><td>Den 1 · album</td><td colspan="2">aspoň <b>25 %</b> pro všechny. Průběžně: lvl 10–16 → 18 %, lvl 16 → 24 %, lvl 20+ → 27 %</td></tr>
       <tr><td>Den 1 · cech</td><td colspan="2">6/4 do 16:45 · Hall of Knights do 22:30 · pak ASAP 10/10</td></tr>
-      <tr><td>Den 1 · level</td><td class="c-f2p">co nejvýš, zhruba 15–25</td><td class="c-eco">ideál lvl 25 + pevnost + skip na HoK 6, kdo jede dál, klidně 30+</td></tr>
+      <tr class="must"><td>Den 1 · level</td><td class="c-f2p">lvl 25 a pevnost, i bez skipů</td><td class="c-eco">lvl 25 + Fortress Pack + skip HoK aspoň 4–5 (ideál 6)</td></tr>
       <tr><td>Den 1 · achievementy</td><td colspan="2">Second Screen (+5 všechny staty) a Rip-off Rip-off</td></tr>
       <tr><td>Den 2 · level</td><td class="c-f2p">lvl 50–65</td><td class="c-eco">lvl 75 (pety)</td></tr>
       <tr><td>Den 2 · album / cech</td><td class="c-f2p">35 %+ · cech 10/10</td><td class="c-eco">40 %+ · cech 10/10</td></tr>
@@ -343,7 +374,8 @@
     <div class="m"><span class="no">Claimnout všechny Twitch dropy na lvl 1</span><span class="yes">Claimuj jen ty, co brzy expirují. Suroviny až s rozjetou pevností, potiony až od lvl 32.</span></div>
     <div class="m"><span class="no">Točit kolo štěstí hned ráno</span><span class="yes">Spiny si nech na večer. Počkej na Hall of Knights (22:30–23:00), pak toč a zlato dej do těžby gemů.</span></div>
     <div class="m"><span class="no">Kupovat equip nebo přerollovat shop za houby</span><span class="yes">Gear kupuj za zlato. Houby šetři na cech a thirst.</span></div>
-    <div class="m"><span class="no">Dlouhé expedice první den</span><span class="yes">Den 1 jen krátké. Když se nepovedou 2–3 hvězdy, ztratíš méně.</span></div>
+    <div class="m"><span class="no">Dlouhé expedice ve špatnou chvíli</span><span class="yes">Dlouhé jen mezi lvl 10 a 16, tam dávají nejvíc XP. Od lvl 16 den 1 jen krátké.</span></div>
+    <div class="m"><span class="no">Prodávat okřídlený elixír z creator code</span><span class="yes">Ten za zlato prodat nejde, vypij ho. Za 100 zlata prodáš jen ten ze Starter Packu nebo z dropů.</span></div>
     <div class="m"><span class="no">Stavět Gem Mine nebo Wall hned v pevnosti</span><span class="yes">Gem Mine nech na lvl 1 (nejrychlejší a nejlevnější těžení) a Wall na 0.</span></div>
     <div class="m"><span class="no">Kupovat talismany a potiony hned od začátku</span><span class="yes">Talisman slot ignoruj do lvl 15. Big potion hledej až od lvl 35, dřív má mizivou šanci.</span></div>
     <div class="m"><span class="no">Bojovat v pet habitatech hned na lvl 75</span><span class="yes">Habitat fighty odkládej na lvl 92–94. XP se škáluje s tvým levelem.</span></div>
@@ -356,11 +388,11 @@
   <div class="sechead"><h2>Packy pro ECO hráče</h2></div>
   <div class="packs">
     <div class="pack"><span class="k">Pack 1 · před startem</span><h3>Starter Pack</h3><span class="price">4,99 €</span>
-      <ul><li>150–160 hub</li><li>1 000 zlata, big potion</li><li>mount na 4 týdny</li></ul>
-      <span class="when">Potion prodej za 100 zlata do cechovních skillů.</span></div>
+      <ul><li>150–160 hub</li><li>1 000 zlata, okřídlený elixír</li><li>mount na 4 týdny</li></ul>
+      <span class="when">Elixír prodej za 100 zlata do cechovních skillů. Kup ho předem, na startu bývá problém s platbami.</span></div>
     <div class="pack"><span class="k">Pack 2 · lvl 25</span><h3>Fortress Pack</h3><span class="price">9,99 €</span>
       <ul><li>300–325 hub</li><li>100 000 dřeva, 50 000 kamene</li><li>+1 level</li></ul>
-      <span class="when">Jen s odemčenou pevností (lvl 25–100). Přesně podle skip orderu, den 1 ideálně až na HoK 6.</span></div>
+      <span class="when">Jen s odemčenou pevností (lvl 25–100). Přesně podle skip orderu, den 1 Hall of Knights aspoň na 4–5, ideálně 6.</span></div>
     <div class="pack"><span class="k">Pack 3 · lvl 125 + Underworld</span><h3>Pro Pack</h3><span class="price">24,99 €</span>
       <ul><li>750–850 hub</li><li>100 000 duší, 50 000 splinterů</li><li>1 000 přesýpacích hodin</li></ul>
       <span class="when">Chce odemčené pety, Arena Manager, Tower a Underworld.</span></div>
@@ -480,6 +512,7 @@
       <h3>Cechovní skills (cena za level)</h3>
       <p style="font-size:14px;margin:0">1–5: 5 / 10 / 25 / 100 / 250 zlata bez hub. 6: 500 zl + 2 houby · 7: 1 000 + 4 · 8: 1 500 + 6 · 9: 2 000 + 8 · 10: 2 500 + 10. Od 11 výš 10 hub za level.</p>
       <p style="font-size:14px;margin:6px 0 0">3/3 tedy stojí 80 zlata, proto stačí jeden prodaný okřídleňák.</p>
+      <p style="font-size:14px;margin:6px 0 0"><b>Bonus cechu</b> = součet levelů všech členů ÷ 5. 50 lidí na 4/6 = +40 % zlata / +60 % XP, 50 lidí na 10/10 = +100 % / +100 %. Každý člen, co zaostává, stahuje dolů všechny.</p>
       <details class="info">
         <summary>Infografika: guild skills</summary>
         <div class="shots">
