@@ -16,16 +16,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700;800&family=Figtree:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
-<link rel="stylesheet" href="assets/css/tokens.css?v=6">
-<link rel="stylesheet" href="assets/css/layout.css?v=6">
-<link rel="stylesheet" href="assets/css/components.css?v=6">
-<script src="assets/js/config.js?v=6" defer></script>
-<script src="assets/js/store.js?v=6" defer></script>
-<script src="assets/js/mode.js?v=6" defer></script>
-<script src="assets/js/checklist.js?v=6" defer></script>
-<script src="assets/js/timeline.js?v=6" defer></script>
-<script src="assets/js/lightbox.js?v=6" defer></script>
-<script src="assets/js/nav.js?v=6" defer></script>
+<link rel="stylesheet" href="assets/css/tokens.css?v=7">
+<link rel="stylesheet" href="assets/css/layout.css?v=7">
+<link rel="stylesheet" href="assets/css/components.css?v=7">
+<script src="assets/js/config.js?v=7" defer></script>
+<script src="assets/js/store.js?v=7" defer></script>
+<script src="assets/js/mode.js?v=7" defer></script>
+<script src="assets/js/checklist.js?v=7" defer></script>
+<script src="assets/js/timeline.js?v=7" defer></script>
+<script src="assets/js/lightbox.js?v=7" defer></script>
+<script src="assets/js/grznar.js?v=7" defer></script>
+<script src="assets/js/nav.js?v=7" defer></script>
 </head>
 <body data-mode="f2p">
 <div class="wrap">
@@ -104,18 +105,30 @@
       </div></div>
     </li>
 
-    <li class="tl-item" data-for="eco" data-start="15" data-end="20" data-deadline="ECO bonusy 6/4" data-name="ECO: arény, Training Dungeon, bonusy 6/4">
+    <li class="tl-item" data-for="eco" data-start="5" data-end="20" data-deadline="ECO bonusy 6/4" data-name="ECO: okřídleňák a bonusy 6/4">
       <div class="tl-time">16:20<small>deadline</small></div>
       <div class="tl-body"><div class="tl-card">
         <p class="for" data-only="f2p">Tohle dělají ECO hráči:</p>
-        <label><input type="checkbox" id="tl3e" data-check><span class="tl-title"><span class="tag t-eco">ECO</span>8 aren + Training Dungeon, bonusy 6/4</span></label>
+        <label><input type="checkbox" id="tl3p" data-check><span class="tl-title"><span class="tag t-core">ECO · povinné</span>Starter Pack: prodej okřídleňáka a dej bonusy 6/4</span></label>
         <ul>
-          <li>8 arena fightů (lvl 2) a Training Dungeon (lvl 3). Čekání mezi fighty přeskoč, ať jsi rychle hotový.</li>
-          <li>Po vyčištění dungeonu hned zavři hru. Často se zbuguje a vrátí na prvního nepřítele, takže jde dojet až lvl 4.</li>
-          <li>Okřídlený elixír ze Starter Packu (a z Twitch dropů) prodej za 100 zlata. Bonusy <b>Poklad 4 / Instruktor 6 do 16:20</b>.</li>
+          <li>Okřídlený elixír ze Starter Packu (a z Twitch dropů) prodej za 100 zlata.</li>
+          <li>Hned bonusy <b>Poklad 4 / Instruktor 6</b>, nejpozději do 16:20. Tohle musí udělat každý ECO hráč ASAP.</li>
           <li>Zbylé zlato rozklikej do statů.</li>
         </ul>
-        <p class="warn">Expedice zatím ne. Do 16:45 doklikej arénu a počkej, až bude mít bonusy celý cech.</p>
+        <p class="warn">Expedice zatím ne. Počkej do 16:45, až bude mít bonusy celý cech.</p>
+        <button type="button" class="nope" data-grznar="Starter Pack a bonusy nechceš? Fakt?">Nechci</button>
+      </div></div>
+    </li>
+
+    <li class="tl-item bonus" data-for="eco" data-name="ECO bonus: arény a Training Dungeon">
+      <div class="tl-time">16:00–45<small>bonus</small></div>
+      <div class="tl-body"><div class="tl-card">
+        <p class="for" data-only="f2p">Tohle zkoušejí ECO hráči:</p>
+        <label><input type="checkbox" id="tl3e" data-check><span class="tl-title"><span class="tag t-bonus">bonus · advanced</span>8 aren + Training Dungeon</span></label>
+        <ul>
+          <li>8 arena fightů (lvl 2) a Training Dungeon (lvl 3), čekání mezi fighty přeskočíš houbou.</li>
+          <li>Po vyčištění dungeonu hned zavři hru. Často se zbuguje a vrátí na prvního nepřítele, takže jde dojet až lvl 4.</li>
+        </ul>
       </div></div>
     </li>
 
@@ -179,7 +192,7 @@
       <div class="tl-body"><div class="tl-card">
         <label><input type="checkbox" id="tl9" data-check><span class="tl-title"><span class="tag t-goal">cíl</span>Lvl 25 a odemčená pevnost</span></label>
         <p data-only="f2p">I bez skipů se snaž za každou cenu dát lvl 25 ještě dnes. Čím dřív pevnost stojí, tím dřív běží stavby a 48h timer na suroviny.</p>
-        <p data-only="eco">Fortress Pack a skip <b>Hall of Knights aspoň na 4–5</b> (ideál 6). HoK každého člena posiluje celý cech v guild fightech. Kdo houby takhle utratit nechce, musí tu ztrátu dohnat grindem stejně jako F2P.</p>
+        <p data-only="eco">Fortress Pack a skip <b>Hall of Knights aspoň na 5</b> (ideál 6). HoK každého člena posiluje celý cech v guild fightech. Kdo houby takhle utratit nechce, musí tu ztrátu dohnat grindem stejně jako F2P.</p>
       </div></div>
     </li>
   </ol>
@@ -188,7 +201,7 @@
     <h3>Proč máme deadliny</h3>
     <p>Aby měl cech šanci mezi ostatními a byl trochu competitive, ne aby vás někdo buzeroval. Časy platí hlavně první den a hlavně pro F2P, protože tam rozhodují minuty.</p>
     <p>Víme, že 25 % alba je hodně. Je to ale hranice, kterou F2P hráč první den s reklamami v klidu zvládne. Když ti do toho něco vleze, napiš dopředu do <b>🤝general</b>, jsme vstřícní ke každému, kdo hrát chce. Tamtéž patří i dotazy a připomínky, na všechno odepíšeme.</p>
-    <p>A jeden velký cíl: <b>lvl 25 a pevnost první den u všech</b>. Není to povinnost, ale fakt o to stojíme. F2P to dají grindem, ECO k tomu přidají Fortress Pack a skip Hall of Knights aspoň na 4–5. Hall of Knights každého člena se sčítá do síly celého cechu.</p>
+    <p>A jeden velký cíl: <b>lvl 25 a pevnost první den u všech</b>. Není to povinnost, ale fakt o to stojíme. F2P to dají grindem, ECO k tomu přidají Fortress Pack a skip Hall of Knights aspoň na 5. Hall of Knights každého člena se sčítá do síly celého cechu.</p>
     <div class="fair">
       <b>Co když něco nestihnu?</b>
       <p><b>První 3 dny jedeme naostro.</b> Máme náhradníky, kteří na místo v cechu čekají. Kdo bez důvodu nestihne povinné body (červené časy z harmonogramu a album 25 %), počítej s rychlým kickem. Nejde o trestání, jen místo v cechu je na startu moc cenné.</p>
@@ -228,8 +241,9 @@
       <li class="core"><label><input type="checkbox" id="pg3"><span><span class="tag t-core">všichni</span><b>Dropy neclaimuj všechny hned.</b> Ber jen ty, které brzy expirují (7 dní po konci cyklu). Suroviny se generují v momentě claimu na Twitchi, takže dřevo a kámen claimni až s rozjetou pevností. Potiony drž do lvl 32.</span></label></li>
       <li><label><input type="checkbox" id="pg5"><span>Připrav si SFTools (simulace dungeonů a petů) a SF na telefonu. Přihlášení na druhém zařízení = achievement Second Screen.</span></label></li>
       <li><label><input type="checkbox" id="pg7"><span>Vyber si třídu. Rozdíly nejsou velké a pro F2P hrají ještě menší roli. Warrior a Battle Mage jsou v dungeonech pomalejší.</span></label></li>
-      <li data-only="eco"><label><input type="checkbox" id="pg8"><span><span class="tag t-eco">eco</span><b>Předkup Starter Pack</b> ještě před startem, ať tě v launch minutách nezdrží platba.</span></label></li>
+      <li data-only="eco"><label><input type="checkbox" id="pg8"><span><span class="tag t-eco">eco</span><b>Předkup Starter Pack</b> ještě před startem, ať tě v launch minutách nezdrží platba.</span></label><button type="button" class="nope" data-grznar="Ani Starter Pack?">Nechci</button></li>
       <li class="bonus"><label><input type="checkbox" id="pg10"><span><span class="tag t-bonus">bonus</span>Fortress buddy (synchronizace 48h timeru a duplikace útoků). Silně P2W strategie, skoro nikdo ji jet nemusí.</span></label></li>
+      <li class="bonus"><label><input type="checkbox" id="pg11"><span><span class="tag t-bonus">bonus</span>Goon session na snížení kortizolu, ať jdeš do startu v klidu. 🧘</span></label></li>
     </ul>
     <details class="info">
       <summary>Infografika: PvE tierlist tříd</summary>
@@ -287,7 +301,8 @@
     <div class="phase">Lvl 25 · pevnost</div>
     <ul class="check">
       <li class="core"><label><input type="checkbox" id="d1l"><span><span class="tag t-core">všichni</span>Postav pevnost podle pořadí ze sekce <a href="#fort">Pevnost</a> (a roomky 🏰︱Pevnost stavění). <b>Gem Mine nech na lvl 1 a Wall na lvl 0.</b></span></label></li>
-      <li data-only="eco"><label><input type="checkbox" id="d1m"><span><span class="tag t-goal">cíl · eco</span>Kup <b>Fortress Pack</b> a skipuj podle skip orderu, <b>Hall of Knights aspoň na 4–5</b> (ideál 6). Kdo neskipne, dohání to grindem.</span></label></li>
+      <li data-only="eco"><label><input type="checkbox" id="d1m"><span><span class="tag t-goal">cíl · eco</span>Koupil jsem <b>Fortress Pack</b> (ještě první den).</span></label><button type="button" class="nope" data-grznar="Lvl 25 a bez Fortress Packu?">Nechci</button></li>
+      <li data-only="eco"><label><input type="checkbox" id="d1hk"><span><span class="tag t-goal">cíl · eco</span>Skip podle skip orderu, <b>Hall of Knights aspoň na 5</b> (ideál 6). Kdo neskipne, dohání to grindem.</span></label><button type="button" class="nope" data-grznar="Pack koupenej a HoK neskipnutej?">Nechci</button></li>
       <li data-only="f2p"><label><input type="checkbox" id="d1n"><span><span class="tag t-f2p">f2p</span>Stav ve stejném pořadí, jen bez skipování. Laborer's Quarter zkracuje všechny stavby, proto jde hned za Fortress.</span></label></li>
       <li class="core"><label><input type="checkbox" id="d1o"><span><span class="tag t-core">všichni</span>Zapiš si čas odemčení pevnosti. Po 48 h bereš suroviny z útoků (když soupeř taky prošel 48 h).</span></label></li>
       <li><label><input type="checkbox" id="d1p"><span><b>Poklad na 6</b> (750 zlata), free album, free podzemí, doklikej expedice.</span></label></li>
@@ -361,7 +376,7 @@
     <tbody>
       <tr class="must"><td>Den 1 · album</td><td colspan="2">aspoň <b>25 %</b> pro všechny. Průběžně: lvl 10–16 → 18 %, lvl 16 → 24 %, lvl 20+ → 27 %</td></tr>
       <tr><td>Den 1 · cech</td><td colspan="2">6/4 do 16:45 · Hall of Knights do 22:30 · pak ASAP 10/10</td></tr>
-      <tr class="goal"><td>Den 1 · level</td><td class="c-f2p">lvl 25 a pevnost, i bez skipů</td><td class="c-eco">lvl 25 + Fortress Pack + skip HoK aspoň 4–5 (ideál 6)</td></tr>
+      <tr class="goal"><td>Den 1 · level</td><td class="c-f2p">lvl 25 a pevnost, i bez skipů</td><td class="c-eco">lvl 25 + Fortress Pack + skip HoK aspoň na 5 (ideál 6)</td></tr>
       <tr><td>Den 1 · achievementy</td><td colspan="2">Second Screen (+5 všechny staty) a Rip-off Rip-off</td></tr>
       <tr><td>Den 2 · level</td><td class="c-f2p">lvl 50–65</td><td class="c-eco">lvl 75 (pety)</td></tr>
       <tr><td>Den 2 · album / cech</td><td class="c-f2p">35 %+ · cech 10/10</td><td class="c-eco">40 %+ · cech 10/10</td></tr>
@@ -399,7 +414,7 @@
       <span class="when">Elixír prodej za 100 zlata do cechovních skillů. Kup ho předem, na startu bývá problém s platbami.</span></div>
     <div class="pack"><span class="k">Pack 2 · lvl 25</span><h3>Fortress Pack</h3><span class="price">9,99 €</span>
       <ul><li>300–325 hub</li><li>100 000 dřeva, 50 000 kamene</li><li>+1 level</li></ul>
-      <span class="when">Jen s odemčenou pevností (lvl 25–100). Přesně podle skip orderu, den 1 Hall of Knights aspoň na 4–5, ideálně 6.</span></div>
+      <span class="when">Jen s odemčenou pevností (lvl 25–100). Přesně podle skip orderu, den 1 Hall of Knights aspoň na 5, ideálně 6.</span></div>
     <div class="pack"><span class="k">Pack 3 · lvl 125 + Underworld</span><h3>Pro Pack</h3><span class="price">24,99 €</span>
       <ul><li>750–850 hub</li><li>100 000 duší, 50 000 splinterů</li><li>1 000 přesýpacích hodin</li></ul>
       <span class="when">Chce odemčené pety, Arena Manager, Tower a Underworld.</span></div>
@@ -556,6 +571,12 @@
   <span>Data vychází z S&amp;F Guide Hub (Vaaz, Darth Monk), infografiky © SF Tavern. Ceny packů se v shopu mohou lišit.</span>
 </footer>
 </div>
+
+<dialog class="grz" id="grznar" aria-label="Grznar">
+  <img src="assets/img/grznar.webp" alt="Grznar: Nejseš píča?" width="395" height="400">
+  <p id="grzMsg"></p>
+  <button type="button" id="grzClose">Dobře, napravím to</button>
+</dialog>
 
 <dialog class="lb" id="lightbox" aria-label="Infografika">
   <div class="lb-bar"><span id="lbCap"></span><button type="button" id="lbClose">Zavřít ✕</button></div>

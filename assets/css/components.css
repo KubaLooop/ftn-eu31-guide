@@ -177,3 +177,19 @@ ul.check li.bonus label{color:var(--muted)}
 .why .fair{margin-top:12px;background:var(--info-soft);border-radius:10px;padding:10px 14px}
 .why .fair b{display:block;font-size:14px}
 .why .fair p{margin:4px 0 0}
+
+/* tlačítko Nechci a Grznar */
+.nope{font:inherit;font-size:12px;font-weight:700;color:var(--muted);background:transparent;border:1px dashed var(--line);border-radius:6px;padding:4px 10px;cursor:pointer;flex:none}
+.nope:hover{color:var(--core);border-color:var(--core)}
+.nope:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+ul.check li:has(> .nope){display:flex;align-items:center;gap:10px}
+ul.check li:has(> .nope) > label{flex:1}
+.tl-card .nope{margin-top:8px}
+dialog.grz{border:0;border-radius:14px;padding:14px;background:var(--panel);color:var(--ink);max-width:min(92vw,420px);text-align:center;box-shadow:0 10px 40px rgba(0,0,0,.4)}
+dialog.grz::backdrop{background:rgba(0,0,0,.7)}
+dialog.grz[open]{animation:grz .35s cubic-bezier(.2,1.6,.4,1)}
+@keyframes grz{from{transform:scale(.6) rotate(-6deg);opacity:0}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){dialog.grz[open]{animation:none}}
+dialog.grz img{border-radius:10px;margin:0 auto;width:100%}
+dialog.grz p{font-weight:800;font-size:17px;margin:12px 0}
+dialog.grz button{font:inherit;font-weight:700;background:var(--core);color:#fff;border:0;border-radius:8px;padding:10px 16px;cursor:pointer;min-height:44px}
